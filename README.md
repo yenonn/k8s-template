@@ -6,7 +6,7 @@ Question: How to setup?
 >Answer: run `./setup.sh`
 
 Question: How to erase the setup?
->Answer: run `./setup --clean`
+>Answer: run `./setup.sh --clean`
 
 Question: How to run?
 >Answer: `vi Pod.yaml` will immediately repopulate the template for you.
