@@ -2,6 +2,7 @@
 ## purpose
 This is the .vimrc template for easy k8s templates generation.
 
+## faq
 Question: How to setup?
 >run `./setup.sh`
 
