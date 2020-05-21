@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: ##NUMBER##
   selector:
-    ## labels that matching the pods labels
+    ##* labels that matching the pods labels
     matchLabels:
       ##KEY##:##VALUE##
   template:
@@ -15,8 +15,8 @@ spec:
       name: ##POD_NAME##
       labels:
         ##KEY##: ##VALUE##
-      ## optional
-      namespace: ##NAMESPACE_OPTIONAL##
+      ##* Optional
+      #namespace: ##NAMESPACE_OPTIONAL##
     spec:
       containers: 
         - name: ##CONTAINER_NAME##

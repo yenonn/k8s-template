@@ -5,18 +5,19 @@ metadata:
   name: ##POD_NAME##
   labels:
     ##KEY##: ##VALUE##
-  ## optional
-  namespace: ##NAMESPACE_OPTIONAL##
+  ##* Optional
+  #namespace: ##NAMESPACE_OPTIONAL##
 spec:
   containers: 
   - name: ##CONTAINER_NAME##
     image: ##IMAGE_NAME##
-    ports:
-      - containerPort:
-    resources:
-      limits:
-        memory: ##"XXMi"##
-      requests:
-        memory: ##"XXMi"##
-    command: ##["COMMAND_VALUE']##
-    args: ##["ARG1", "ARG2"]##
+    ##* Optional
+    #ports:
+    #  - containerPort:
+    #resources:
+    #  limits:
+    #    memory: ##"XXMi"##
+    #  requests:
+    #    memory: ##"XXMi"##
+    #command: ##["COMMAND_VALUE']##
+    #args: ##["ARG1", "ARG2"]##
