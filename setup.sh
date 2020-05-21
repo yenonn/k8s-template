@@ -16,6 +16,7 @@ then
 :autocmd BufNewFile [R|r]c*.yaml 0r ~/.vim/templates/rc-definition.yaml
 :autocmd BufNewFile [R|r]s*.yaml 0r ~/.vim/templates/rs-definition.yaml
 :autocmd BufNewFile [D|d]eploy*.yaml 0r ~/.vim/templates/deployment-definition.yaml
+:autocmd BufNewFile [N|n]amespace*.yaml 0r ~/.vim/templates/namespace-definition.yaml
 ## k8s-template endd here
 EOF
 
