@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: ##NAME##
+  labels:
+    ##KEY##:##VALUES##
+spec:
+  replicas: ##NUMBER##
+  template:
+    metadata:
+      name: ##POD_NAME##
+      labels:
+        ##KEY##: ##VALUE##
+      namespace: ##NAMESPACE_OPTIONAL##
+    spec:
+      containers: 
+        - name: ##CONTAINER_NAME##
+          image: ##IMAGE_NAME##
