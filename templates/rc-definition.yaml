@@ -11,7 +11,8 @@ spec:
       name: ##POD_NAME##
       labels:
         ##KEY##: ##VALUE##
-      namespace: ##NAMESPACE_OPTIONAL##
+      ##* Optional
+      #namespace: ##NAMESPACE_OPTIONAL##
     spec:
       containers: 
         - name: ##CONTAINER_NAME##
