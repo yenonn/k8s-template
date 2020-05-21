@@ -1,6 +1,6 @@
 # k8s-template
 ## purpose
-This is the .vimrc template hack for easy k8s templates generating
+This is the .vimrc template for easy k8s templates generation.
 
 Question: How to setup?
 >Answer: run `./setup.sh`
