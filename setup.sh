@@ -22,6 +22,7 @@ then
 EOF
 fi
 
+### doing cleanup
 if [ "$1" == "--clean" ]
 then
   sed -i '/k8s-template starts/,/k8s-template ends/d' ~/.vimrc
