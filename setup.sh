@@ -13,7 +13,7 @@ then
   cat <<-EOF >> ~/.vimrc
 ## k8s-template starts here
 :autocmd BufNewFile [P|p]od*.yaml 0r ~/.vim/templates/pod-definition.yaml
-:autocmd BufNewFile [R|r]eplicaset*.yaml 0r ~/.vim/templates/replicaset-definition.yaml
+:autocmd BufNewFile [R|r]c.yaml 0r ~/.vim/templates/rc-definition.yaml
 ## k8s-template endd here
 EOF
 
