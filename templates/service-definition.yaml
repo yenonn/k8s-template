@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: service
+metadata:
+  name: ##NAME##
+spec:
+  type: ##NodePort|ClusterIP|LoadBalancer##
+  ports:
+    - targetPort: ##external port##
+      port: ##external port##
+      nodePort: ##internal port##
+  selector:
+    # Matching the selector with the labels in pod or deployment
+    ##KEY##: VALUE##
