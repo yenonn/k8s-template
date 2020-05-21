@@ -20,5 +20,11 @@ then
 :autocmd BufNewFile [S|s]ervice*.yaml 0r ~/.vim/templates/service-definition.yaml
 "" k8s-template ends here
 EOF
+fi
 
+if [ "$1" == "--clean" ]
+then
+  sed -i '/k8s-template starts/,/k8s-template ends/d' ~/.vimrc
+  unlink ~/.vim/templates
+  rm -fr ~/.vim
 fi
