@@ -11,7 +11,7 @@ ln -snf $TEMPLATES_DIR ~/.vim/templates
 if [ -f ~/.vimrc ]
 then
   cat <<-EOF >> ~/.vimrc
-:autocmd BufNewFile pod*.yaml 0r ~/.vim/templates/pod-definition.j2
+:autocmd BufNewFile [P|p]od*.yaml 0r ~/.vim/templates/pod-definition.j2
 EOF
 
 fi
