@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ##NAME##
+  labels:
+    ##KEY##:##VALUE##
+spec:
+  replicas: ##NUMBER##
+  selector:
+    ##* labels that matching the pods labels
+    matchLabels:
+      ##KEY##:##VALUE##
+  template:
+    metadata:
+      name: ##POD_NAME##
+      labels:
+        ##KEY##: ##VALUE##
+      ##* Optional
+      #namespace: ##NAMESPACE_OPTIONAL##
+    spec:
+      containers: 
+        - name: ##CONTAINER_NAME##
+          image: ##IMAGE_NAME##
